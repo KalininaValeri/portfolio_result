@@ -473,7 +473,7 @@ ul {
     right: 0;
     width: 100px;
     height: 114px;
-    background: url("/assets/img/viking.png") no-repeat center;
+    background: url("../img/viking.png") no-repeat center;
     -webkit-transform: translate3D(100%, 0, 0);
         -ms-transform: translate3D(100%, 0, 0);
             transform: translate3D(100%, 0, 0);
@@ -491,7 +491,7 @@ ul {
   height: 600px;
   overflow: hidden;
   position: relative;
-  background: url("/assets/img/bg/portfolio.jpg") no-repeat 50% 50%; }
+  background: url("../img/bg/portfolio.jpg") no-repeat 50% 50%; }
 
 .l-hero__bg {
   position: absolute;
