@@ -2,79 +2,75 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>About</title>
+    <title>Обо мне</title>
     <meta content="" name="author">
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="assets/css/foundation.css">
-    <link rel="stylesheet" href="assets/css/app.css">
-    <script src="assets/js/foundation.js" defer></script>
-    <script src="assets/js/app.js" defer></script><!--[if lt IE 9]>
+    <link rel="stylesheet" href="./assets/css/foundation.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <!--script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAz1ObcFPh7TlN9ju08ZKoJg4oers1G6ow&callback=initMap")-->
+    <script src="./assets/js/foundation.js" defer></script>
+    <script src="./assets/js/app.js" defer></script><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
     <div class="wrapper">
-      <section class="l-section l-hero">
-                <div class="l-hero__bg">
-                  <!--img(src="assets/img/bg/portfolio.jpg")-->
-                </div>
-                <div class="l-hero__container"></div>
-                        <div class="c-user" style="background-image: url(assets/img/decor/strars1.png);">
-                          <div class="c-user__pic-container"><img class="c-user__pic" src="assets/img/content/user.jpg"></div>
-                          <div class="c-user__name">Валерия Калинина</div>
-                          <div class="c-user__desc">Личный сайт веб разработчика</div>
-                        </div>
-                <ul class="socials">
-                  <li class="social__item"><a class="social__link" href="#">
-                      <svg class="social__icon">
-                        <use xlink:href="assets/img/sprite.svg#vk"></use>
-                      </svg></a></li>
-                  <li class="social__item"><a class="social__link" href="#">
-                      <svg class="social__icon">
-                        <use xlink:href="assets/img/sprite.svg#github"></use>
-                      </svg></a></li>
-                  <li class="social__item"><a class="social__link" href="#">
-                      <svg class="social__icon">
-                        <use xlink:href="assets/img/sprite.svg#in"></use>
-                      </svg></a></li>
-                </ul>
-                <ul class="socials socials_nav-page">
-                  <li class="social__item"><a class="social__link" href="#">
-                      <svg class="social__icon">
-                        <use xlink:href="assets/img/sprite.svg#hamburger"></use>
-                      </svg></a></li>
-                </ul>
-      </section>
-      <section class="l-section l-about">
-        <div class="l-about__col l-about__col_left">
-          <svg class="l-about__triangle" viewBox="0 0 1000 110" preserveAspectRatio="none">
-            <polygon points="0,0 0,110 1000,110"></polygon>
-          </svg>
-          <div class="c-section-title c-section-title_col l-about-col__item" style="background-image: url(assets/img/decor/stars2.png);">Обо мне</div>
-          <div class="c-about l-about-col__item">
-            <div class="c-about__pic-cotainer"><img class="c-about__pic" src="assets/img/content/user.jpg"></div>
-            <div class="c-block-title">Кто я</div>
-            <div class="c-block-text">
-              <p>Я веб разработчик из Новосибирска. Мне 28 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
-              <p>Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!</p>
+      <div class="content">
+        <section class="l-section l-hero">
+          <div class="l-hero__bg"><img class="l-hero__bg-pic" src="./assets/img/bg/portfolio.jpg"/></div>
+          <div class="l-hero__container"></div>
+          <div class="c-user">
+            <div class="c-user__bg"></div><a class="c-user__pic-container" href="/index.html"><img class="c-user__pic" src="./assets/img/content/user.jpg"/></a>
+            <div class="c-user__name">Калинина Валерия</div>
+            <div class="c-user__desc">Личный сайт веб разработчика</div>
+          </div>
+          <ul class="socials undefined">
+            <li class="social__item"><a class="social__link" href="https://vk.com/bashinova_v" target="_blank">
+                <svg class="social__icon">
+                  <use xlink:href="./assets/img/sprite.svg#vk"></use>
+                </svg></a></li>
+            <li class="social__item"><a class="social__link" href="https://github.com/KalininaValeri" target="_blank">
+                <svg class="social__icon">
+                  <use xlink:href="./assets/img/sprite.svg#github"></use>
+                </svg></a></li>
+            <li class="social__item"><a class="social__link" href="#" target="_blank">
+                <svg class="social__icon">
+                  <use xlink:href="./assets/img/sprite.svg#in"></use>
+                </svg></a></li>
+          </ul>
+        </section>
+        <section class="l-section l-about">
+          <div class="l-about__col l-about__col_left">
+            <svg class="l-about__triangle" viewBox="0 0 1000 110" preserveAspectRatio="none">
+              <polygon points="0,0 0,110 1000,110"></polygon>
+            </svg>
+            <div class="c-section-title c-section-title_col l-about-col__item l-about-col__item_left">
+              <div class="c-section-title__bg" style="background-image: url(./assets/img/decor/stars2.png);"></div><span class="c-section-title__content">Обо мне</span>
+            </div>
+            <div class="c-about l-about-col__item l-about-col__item_right">
+              <div class="c-about__pic-cotainer"><img class="c-about__pic" src="./assets/img/content/user.jpg"></div>
+              <div class="c-block-title">Кто я</div>
+              <div class="c-block-text">
+                <p>Я веб разработчик из Новосибирска. Мне 28 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
+                <p>Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="l-about__col l-about__col_right">
-          <svg class="l-about__triangle" viewBox="0 0 1000 110" preserveAspectRatio="none">
-            <polygon points="0,110 1000,110 1000,0"></polygon>
-          </svg>
-          <div class="l-skills">
-            <div class="c-block-title">Чем я могу быть<br>вам полезен</div>
-            <div class="l-skills__text">
-              <p>Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</p>
-            </div>
-            <ul class="l-skills-group">
-              <li class="l-skills-group__item">
-                <div class="c-skills-group__title">Frontend
-                  <ul class="l-skils-list">
+          <div class="l-about__col l-about__col_right">
+            <svg class="l-about__triangle" viewBox="0 0 1000 110" preserveAspectRatio="none">
+              <polygon points="0,110 1000,110 1000,0"></polygon>
+            </svg>
+            <div class="l-skills">
+              <div class="c-block-title">Чем я могу быть<br>вам полезен</div>
+              <div class="l-skills__text">
+                <p>Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</p>
+              </div>
+              <ul class="l-skills-group">
+                <li class="l-skills-group__item">
+                  <div class="c-skills-group__title">Frontend</div>
+                  <ul class="l-skils-list l-skills-list_three">
                     <li class="l-skills-list_item">
                       <div class="c-skill">
                         <svg class="c-skill__circle">
@@ -83,6 +79,8 @@
                         </svg>
                         <div class="c-skill__title">HTML5</div>
                       </div>
+                    </li>
+                    <li class="l-skills-list_item">
                       <div class="c-skill">
                         <svg class="c-skill__circle">
                           <circle class="c-skills__circle-under" r="45" cx="50%" cy="50%"></circle>
@@ -90,6 +88,8 @@
                         </svg>
                         <div class="c-skill__title">CSS3</div>
                       </div>
+                    </li>
+                    <li class="l-skills-list_item">
                       <div class="c-skill">
                         <svg class="c-skill__circle">
                           <circle class="c-skills__circle-under" r="45" cx="50%" cy="50%"></circle>
@@ -99,10 +99,9 @@
                       </div>
                     </li>
                   </ul>
-                </div>
-              </li>
-              <li class="l-skills-group__item">
-                <div class="c-skills-group__title">Backend
+                </li>
+                <li class="l-skills-group__item">
+                  <div class="c-skills-group__title">Backend</div>
                   <ul class="l-skils-list">
                     <li class="l-skills-list_item">
                       <div class="c-skill">
@@ -112,6 +111,8 @@
                         </svg>
                         <div class="c-skill__title">PHP</div>
                       </div>
+                    </li>
+                    <li class="l-skills-list_item">
                       <div class="c-skill">
                         <svg class="c-skill__circle">
                           <circle class="c-skills__circle-under" r="45" cx="50%" cy="50%"></circle>
@@ -119,6 +120,8 @@
                         </svg>
                         <div class="c-skill__title">mySQL</div>
                       </div>
+                    </li>
+                    <li class="l-skills-list_item">
                       <div class="c-skill">
                         <svg class="c-skill__circle">
                           <circle class="c-skills__circle-under" r="45" cx="50%" cy="50%"></circle>
@@ -126,6 +129,8 @@
                         </svg>
                         <div class="c-skill__title">Node.js &amp; npm</div>
                       </div>
+                    </li>
+                    <li class="l-skills-list_item">
                       <div class="c-skill">
                         <svg class="c-skill__circle">
                           <circle class="c-skills__circle-under" r="45" cx="50%" cy="50%"></circle>
@@ -135,11 +140,10 @@
                       </div>
                     </li>
                   </ul>
-                </div>
-              </li>
-              <li class="l-skills-group__item">
-                <div class="c-skills-group__title">WorkFlow
-                  <ul class="l-skils-list">
+                </li>
+                <li class="l-skills-group__item">
+                  <div class="c-skills-group__title">WorkFlow</div>
+                  <ul class="l-skils-list l-skills-list_three">
                     <li class="l-skills-list_item">
                       <div class="c-skill">
                         <svg class="c-skill__circle">
@@ -148,6 +152,8 @@
                         </svg>
                         <div class="c-skill__title">Git</div>
                       </div>
+                    </li>
+                    <li class="l-skills-list_item">
                       <div class="c-skill">
                         <svg class="c-skill__circle">
                           <circle class="c-skills__circle-under" r="45" cx="50%" cy="50%"></circle>
@@ -155,6 +161,8 @@
                         </svg>
                         <div class="c-skill__title">Gulp</div>
                       </div>
+                    </li>
+                    <li class="l-skills-list_item">
                       <div class="c-skill">
                         <svg class="c-skill__circle">
                           <circle class="c-skills__circle-under" r="45" cx="50%" cy="50%"></circle>
@@ -164,92 +172,102 @@
                       </div>
                     </li>
                   </ul>
-                </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="l-section l-map l-section_bg" id="map">
+          <div class="c-block-bg c-block-bg_map" style="background-image: url('./assets/img/content/map.jpg');"></div>
+          <div class="c-contacts">
+            <div class="c-block-title">Контакты</div>
+            <ul class="c-contacts__container">
+              <li class="c-contacts__item"><a class="c-contacts__link c-contacts_col" href="#">
+                  <svg class="c-contacts__icon">
+                    <use xlink:href="./assets/img/sprite.svg#envelope_n"></use>
+                  </svg></a>
+                <div class="c-contacts__title c-contacts_col">kalinina.valeri@gmail.com</div>
+              </li>
+              <li class="c-contacts__item"><a class="c-contacts__link c-contacts_col" href="#">
+                  <svg class="c-contacts__icon">
+                    <use xlink:href="./assets/img/sprite.svg#skype_n"></use>
+                  </svg></a>
+                <div class="c-contacts__title c-contacts_col">bashinova.va</div>
+              </li>
+              <li class="c-contacts__item"><a class="c-contacts__link c-contacts_col" href="#">
+                  <svg class="c-contacts__icon">
+                    <use xlink:href="./assets/img/sprite.svg#phone_n"></use>
+                  </svg></a>
+                <div class="c-contacts__title c-contacts_col">+7 923 183 8521</div>
+              </li>
+              <li class="c-contacts__item"><a class="c-contacts__link c-contacts_col" href="#">
+                  <svg class="c-contacts__icon">
+                    <use xlink:href="./assets/img/sprite.svg#map_n"></use>
+                  </svg></a>
+                <div class="c-contacts__title c-contacts_col">Новосибирск, р-н Кировский, м.Студенческая</div>
               </li>
             </ul>
           </div>
-        </div>
-      </section>
-      <section class="l-section l-map l-section_bg">
-        <div class="c-block-bg" style="background-image: url('assets/img/content/map.jpg');"></div>
-        <div class="c-contacts">
-          <div class="c-block-title">Контакты</div>
-          <ul class="c-contacts__container">
-            <li class="c-contacts__item"><a class="c-contacts__link c-contacts_col" href="#">
-                <svg class="c-contacts__icon">
-                  <use xlink:href="assets/img/sprite.svg#envelope_n"></use>
-                </svg></a>
-              <div class="c-contacts__title c-contacts_col">kalinina.valeri@gmail.com</div>
+        </section>
+        <div class="c-nav_site-list">
+          <ul class="c-nav_site">
+            <li class="c-nav_site__item c-nav_site__item_work"><a class="c-nav_site__link" href="/work.html">Мои работы</a>
             </li>
-            <li class="c-contacts__item"><a class="c-contacts__link c-contacts_col" href="#">
-                <svg class="c-contacts__icon">
-                  <use xlink:href="assets/img/sprite.svg#skype_n"></use>
-                </svg></a>
-              <div class="c-contacts__title c-contacts_col">skype_kdn</div>
+            <li class="c-nav_site__item c-nav_site__item_about"><a class="c-nav_site__link c-nav_site__link_active" href="/about.html">Обо мне</a>
+              <!--a.c-nav_site__link(href="/" + `${navItem[1]}` +".html" class=((ndx === activeEl) ? 'c-nav_site__link_active' : ''))= navItem[0]-->
             </li>
-            <li class="c-contacts__item"><a class="c-contacts__link c-contacts_col" href="#">
-                <svg class="c-contacts__icon">
-                  <use xlink:href="assets/img/sprite.svg#phone_n"></use>
-                </svg></a>
-              <div class="c-contacts__title c-contacts_col">+7 923 183 8521</div>
+            <li class="c-nav_site__item c-nav_site__item_blog"><a class="c-nav_site__link" href="/blog.html">Блог</a>
             </li>
-            <li class="c-contacts__item"><a class="c-contacts__link c-contacts_col" href="#">
-                <svg class="c-contacts__icon">
-                  <use xlink:href="assets/img/sprite.svg#map_n"></use>
-                </svg></a>
-              <div class="c-contacts__title c-contacts_col">Новосибирск, р-н Кировский</div>
+            <li class="c-nav_site__item c-nav_site__item_authorization"><a class="c-nav_site__link" href="/#.html">Авторизация</a>
             </li>
           </ul>
-        </div>
-      </section>
-            <div class="nav-site"><a class="c-block-close" href="#">
-                <svg class="c-block-close__pic">
-                  <use xlink:href="assets/img/sprite.svg#portf_arrow_down"></use>
-                </svg></a>
-              <ul class="nav-site__list">
-                <li class="nav-site__item"><a class="nav-site__link nav-site__link_active" href="/work.html">Мои работы</a></li>
-                <li class="nav-site__item"><a class="nav-site__link nav-site__link_active" href="/about.html">Обо мне</a></li>
-                <li class="nav-site__item"><a class="nav-site__link nav-site__link_active" href="/blog.html">Блог</a></li>
-                <li class="nav-site__item"><a class="nav-site__link nav-site__link_active" href="/#.html">Авторизация</a></li>
-              </ul>
-            </div>
-      <div class="push"></div>
-    </div>
-    <footer class="l-footer">
-      <div class="l-footer__container">
-        <div class="l-footer__item">Этот сайт я сделал в рамках обучения в Школе<br>онлайн образования LoftSchool.</div>
-        <div class="l-footer__item">
-          <ul class="c-nav_footer">
-            <li class="c-nav_footer__item"><a class="c-nav_footer__link" href="/work.html">Мои работы</a></li>
-            <li class="c-nav_footer__item"><a class="c-nav_footer__link" href="/about.html">Обо мне</a></li>
-            <li class="c-nav_footer__item"><a class="c-nav_footer__link" href="/blog.html">Блог</a></li>
-            <li class="c-nav_footer__item"><a class="c-nav_footer__link" href="/#.html">Авторизация</a></li>
-          </ul>
-          <ul class="socials socials_footer">
-            <li class="social__item"><a class="social__link" href="#">
-                <svg class="social__icon">
-                  <use xlink:href="assets/img/sprite.svg#vk"></use>
-                </svg></a></li>
-            <li class="social__item"><a class="social__link" href="#">
-                <svg class="social__icon">
-                  <use xlink:href="assets/img/sprite.svg#github"></use>
-                </svg></a></li>
-            <li class="social__item"><a class="social__link" href="#">
-                <svg class="social__icon">
-                  <use xlink:href="assets/img/sprite.svg#in"></use>
-                </svg></a></li>
-          </ul>
-        </div>
-        <div class="l-footer__item">
-          <ul class="c-footer__contacts">
-            <li>skype_kdn</li>
-            <li>astahov@gmail.com</li>
-            <li>+7 931 200 93 24</li>
-            <li>г. Новосибирск, ул. Инская, д.4</li>
-          </ul>
-        </div>
+        </div><a class="c-hamburger c-hamburger_nav c-hamburger_active" href="#">
+          <svg class="c-hamburger__icon" x="0px" y="0px" viewBox="0 0 40 35">
+            <path class="c-hamburger__el c-hamburger__el-top path1" d="M40,2.5C40,3.881,38.881,5,37.5,5h-35C1.119,5,0,3.881,0,2.5l0,0C0,1.119,1.119,0,2.5,0h35 	C38.881,0,40,1.119,40,2.5L40,2.5z"></path>
+            <path class="c-hamburger__el c-hamburger__el-middle path2" d="M40,17.5c0,1.381-1.119,2.5-2.5,2.5h-35C1.119,20,0,18.881,0,17.5l0,0C0,16.119,1.119,15,2.5,15h35 	C38.881,15,40,16.119,40,17.5L40,17.5z"></path>
+            <path class="c-hamburger__el c-hamburger__el-bottom path3" d="M40,32.5c0,1.381-1.119,2.5-2.5,2.5h-35C1.119,35,0,33.881,0,32.5l0,0C0,31.119,1.119,30,2.5,30h35 	C38.881,30,40,31.119,40,32.5L40,32.5z"></path>
+          </svg></a>
       </div>
-      <div class="l-footer__down">© Владимир Астахов | Создано с любовью в LoftSchool | 2016</div>
-    </footer>
+      <footer class="l-footer">
+        <div class="l-footer__container">
+          <div class="l-footer__item l-footer__item_first">Этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool.</div>
+          <div class="l-footer__item l-footer__item_center">
+            <ul class="c-nav_footer">
+              <li class="c-nav_footer__item c-nav_footer__item_work"><a class="c-nav_footer__link" href="work.html">Мои работы</a>
+              </li>
+              <li class="c-nav_footer__item c-nav_footer__item_about"><a class="c-nav_footer__link" href="about.html">Обо мне</a>
+              </li>
+              <li class="c-nav_footer__item c-nav_footer__item_blog"><a class="c-nav_footer__link" href="blog.html">Блог</a>
+              </li>
+              <li class="c-nav_footer__item c-nav_footer__item_authorization"><a class="c-nav_footer__link" href="/#.html">Авторизация</a>
+              </li>
+            </ul>
+            <ul class="socials socials_footer">
+              <li class="social__item"><a class="social__link" href="https://vk.com/bashinova_v" target="_blank">
+                  <svg class="social__icon">
+                    <use xlink:href="./assets/img/sprite.svg#vk"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link" href="https://github.com/KalininaValeri" target="_blank">
+                  <svg class="social__icon">
+                    <use xlink:href="./assets/img/sprite.svg#github"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link" href="#" target="_blank">
+                  <svg class="social__icon">
+                    <use xlink:href="./assets/img/sprite.svg#in"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+          <div class="l-footer__item l-footer__item_last">
+            <ul class="c-footer__contacts">
+              <li>kalinina.valeri@gmail.com</li>
+              <li>+7 923 183 8521</li>
+              <li>bashinova.va</li>
+              <li>Новосибирск, р-н Кировский, м.Студенческая</li>
+            </ul>
+          </div>
+        </div>
+        <div class="l-footer__down">© Калинина Валерия | © Создано с любовью в LoftSchool | 2017</div>
+      </footer>
+    </div>
   </body>
 </html>
