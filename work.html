@@ -8,36 +8,38 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="./assets/css/foundation.css">
-    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
     <!--script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAz1ObcFPh7TlN9ju08ZKoJg4oers1G6ow&callback=initMap")-->
-    <script src="./assets/js/foundation.js" defer></script>
-    <script src="./assets/js/app.js" defer></script><!--[if lt IE 9]>
+    <script src="assets/js/foundation.js" defer></script>
+    <script src="assets/js/app.js" defer></script><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
     <div class="wrapper">
       <div class="content">
         <section class="l-section l-hero l-hero_work">
-          <div class="l-hero__bg"><img class="l-hero__bg-pic" src="./assets/img/bg/portfolio.jpg"/></div>
+          <div class="l-hero__bg">
+            <video class="l-hero__bg-item l-hero__bg-item_video" src="assets/img/night.mp4" autoplay="autoplay" loop="loop"></video><img class="l-hero__bg-item l-hero__bg-item_pic" src="assets/img/bg/bg_portfolio.png"/>
+          </div>
           <div class="l-hero__container"></div>
-          <div class="c-user">
-            <div class="c-user__bg"></div><a class="c-user__pic-container" href="/index.html"><img class="c-user__pic" src="./assets/img/content/user.jpg"/></a>
+          <div class="c-user__bg"></div>
+          <div class="c-user"><a class="c-user__pic-container" href="/index.html"><img class="c-user__pic" src="assets/img/content/user.jpg"/></a>
             <div class="c-user__name">Валерия Калинина</div>
             <div class="c-user__desc">Личный сайт веб разработчика</div>
           </div>
           <ul class="socials undefined">
             <li class="social__item"><a class="social__link" href="https://vk.com/bashinova_v" target="_blank">
                 <svg class="social__icon">
-                  <use xlink:href="./assets/img/sprite.svg#vk"></use>
+                  <use xlink:href="assets/img/sprite.svg#vk"></use>
                 </svg></a></li>
             <li class="social__item"><a class="social__link" href="https://github.com/KalininaValeri" target="_blank">
                 <svg class="social__icon">
-                  <use xlink:href="./assets/img/sprite.svg#github"></use>
+                  <use xlink:href="assets/img/sprite.svg#github"></use>
                 </svg></a></li>
             <li class="social__item"><a class="social__link" href="#" target="_blank">
                 <svg class="social__icon">
-                  <use xlink:href="./assets/img/sprite.svg#in"></use>
+                  <use xlink:href="assets/img/sprite.svg#in"></use>
                 </svg></a></li>
           </ul>
           <div class="c-page-title">
@@ -48,50 +50,46 @@
                 <rect x="0" y="110" width="2000" height="140"></rect>
               </svg>
             </div>
-            <div class="c-section-title" style="background-image: url(./assets/img/decor/stars-works.png);">Мои работы</div>
+            <div class="c-section-title" style="background-image: url(assets/img/decor/stars-works.png);">Мои работы</div>
           </div>
         </section>
         <section class="l-section l-slider">
           <div class="l-slider__container">
-            <div class="l-slider__item l-slider__item_left">
+            <div class="l-slider__item l-slider__item_left" id="slide-active-caption">
               <div class="l-slider__wrapper">
-                <div class="c-block-title">Сайт школы онлайн образования</div>
-                <div class="c-block-text_blue">HTML , CSS, JAVASCRIPT</div><a class="c-block-link_blue" href="#"><span class="c-block-link__icon">
+                <div class="c-block-title"></div>
+                <div class="c-block-text_blue"></div><a class="c-block-link_blue" href="#" target="_blank"><span class="c-block-link__icon">
                     <svg class="c-block-link__pic">
-                      <use xlink:href="./assets/img/sprite.svg#link"></use>
+                      <use xlink:href="assets/img/sprite.svg#link"></use>
                     </svg></span>Посмотреть сайт</a>
               </div>
             </div>
-            <div class="l-slider__pic-wrapper"><img class="l-slider__pic" src="./assets/img/content/site.png"></div>
-            <div class="l-slider__arrows">
-              <div class="l-slider__arrows-down l-slider__arrows-item"><img class="l-slider__arrow-pic" src="./assets/img/content/site.png">
-                <div class="l-slider__arrow-dark"></div><a class="c-block-arrow" href="#">
+            <div class="l-slider__pic-wrapper" id="slide-active-pic"><span></span><img class="l-slider__pic" src=""></div>
+            <div class="l-slider__arrows" id="slide-items">
+              <div class="l-slider__arrow-dark"></div>
+              <div class="c-block-arrows-wrapper"><a class="c-block-arrow" href="#" id="arrow-down">
                   <svg class="c-block-arrow__pic">
-                    <use xlink:href="./assets/img/sprite.svg#portf_arrow_down"></use>
-                  </svg></a>
-              </div>
-              <div class="l-slider__arrows-up l-slider__arrows-item"><img class="l-slider__arrow-pic" src="./assets/img/content/site.png">
-                <div class="l-slider__arrow-dark"></div><a class="c-block-arrow" href="#">
+                    <use xlink:href="assets/img/sprite.svg#portf_arrow_down"></use>
+                  </svg></a><a class="c-block-arrow" href="#" id="arrow-up">
                   <svg class="c-block-arrow__pic">
-                    <use xlink:href="./assets/img/sprite.svg#portf_arrow_up"></use>
-                  </svg></a>
-              </div>
+                    <use xlink:href="assets/img/sprite.svg#portf_arrow_up"></use>
+                  </svg></a></div>
             </div>
           </div>
         </section>
         <section class="l-section l-section_bg l-reviews">
-          <div class="c-block-bg"><img class="c-block-bg_pic" src="./assets/img/bg/bg_work.jpg"></div>
-          <div class="c-section-title" style="background-image: url(./assets/img/decor/stars-works.png);">Что обо мне говорят</div>
+          <div class="c-block-bg"><img class="c-block-bg_pic" src="assets/img/bg/bg_work.jpg"></div>
+          <div class="c-section-title" style="background-image: url(assets/img/decor/stars-works.png);">Что обо мне говорят</div>
           <div class="l-reviews__container">
             <div class="l-review__item_offset"></div>
             <div class="l-review__item l-review__item_first">
-              <div class="l-review__pic-cotainer"><img class="l-reviews_pic" src="./assets/img/content/photo-rev-1.jpg"></div>
+              <div class="l-review__pic-cotainer"><img class="l-reviews_pic" src="assets/img/content/photo-rev-1.jpg"></div>
               <div class="l-review__content">Этот парень проходил обучение веб-разработке е где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
               <div class="l-review__name">Ковальчук Дмитрий</div>
               <div class="l-review__position">— основатель Loftschool</div>
             </div>
             <div class="l-review__item l-review__item_second">
-              <div class="l-review__pic-cotainer"><img class="l-reviews_pic" src="./assets/img/content/photo-rev-2.jpg"></div>
+              <div class="l-review__pic-cotainer"><img class="l-reviews_pic" src="assets/img/content/photo-rev-2.jpg"></div>
               <div class="l-review__content">Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</div>
               <div class="l-review__name">Александр Собакарь</div>
               <div class="l-review__position">—  наставник</div>
@@ -142,15 +140,15 @@
             <ul class="socials socials_footer">
               <li class="social__item"><a class="social__link" href="https://vk.com/bashinova_v" target="_blank">
                   <svg class="social__icon">
-                    <use xlink:href="./assets/img/sprite.svg#vk"></use>
+                    <use xlink:href="assets/img/sprite.svg#vk"></use>
                   </svg></a></li>
               <li class="social__item"><a class="social__link" href="https://github.com/KalininaValeri" target="_blank">
                   <svg class="social__icon">
-                    <use xlink:href="./assets/img/sprite.svg#github"></use>
+                    <use xlink:href="assets/img/sprite.svg#github"></use>
                   </svg></a></li>
               <li class="social__item"><a class="social__link" href="#" target="_blank">
                   <svg class="social__icon">
-                    <use xlink:href="./assets/img/sprite.svg#in"></use>
+                    <use xlink:href="assets/img/sprite.svg#in"></use>
                   </svg></a></li>
             </ul>
           </div>
@@ -165,6 +163,15 @@
         </div>
         <div class="l-footer__down">© Калинина Валерия | © Создано с любовью в LoftSchool | 2017</div>
       </footer>
+    </div><a class="c-hamburger c-hamburger_nav" href="#" id="hamburger">
+      <div class="c-hamburger__icon"><span class="c-hamburger__el c-hamburger__el-top"></span><span class="c-hamburger__el c-hamburger__el-middle"></span><span class="c-hamburger__el c-hamburger__el-middle_2"></span><span class="c-hamburger__el c-hamburger__el-bottom"></span></div></a>
+    <!--.c-hamburger_active-->
+    <div class="preloader">
+      <div class="preloder__percentages-container">
+        <svg class="preloader__cercles" width="50" height="50" viewBox="0 0 50 50">
+          <circle class="preloader__cercle-percentages" r="23" cx="25px" cy="25px" transform="rotate(-90 25 25)"></circle>
+        </svg><span class="preloder__percentages">20</span><span class="preloader__cercle-runner"></span>
+      </div>
     </div>
   </body>
 </html>
