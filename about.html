@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <!--script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvp217cLZuhnx2B-hjAyeUrs0Igs7ip08"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUt7LASg-YdyG3SE7YtMWBAJksluIXn_s"></script>
     <script src="assets/js/foundation.js" defer></script>
     <script src="assets/js/app.js" defer></script><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
@@ -181,7 +181,8 @@
           </div>
         </section>
         <section class="l-section l-map l-section_bg">
-          <div class="c-block-bg c-block-bg_map" id="map"></div>
+          <div id="map"></div>
+          <div class="c-block-bg c-block-bg_map"></div>
           <div class="c-contacts">
             <div class="c-block-title">Контакты</div>
             <ul class="c-contacts__container">
@@ -276,5 +277,18 @@
         </svg><span class="preloder__percentages">20</span><span class="preloader__cercle-runner"></span>
       </div>
     </div>
+
+    <script>
+        function initMap() {
+            // Create a map object and specify the DOM element for display.
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: -34.397, lng: 150.644},
+                scrollwheel: false,
+                zoom: 8
+            });
+        }
+
+    </script>
+
   </body>
 </html>
