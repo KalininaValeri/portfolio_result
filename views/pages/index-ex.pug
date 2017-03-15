@@ -1,0 +1,12 @@
+extends ../_template
+
+block content
+    include ../common/_greating
+    include ../common/_menu
+
+    ul
+        each index in items
+            figure
+                p
+                    img(src=`${index.picture}`)
+                figcaption= index.name

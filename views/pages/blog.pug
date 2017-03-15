@@ -1,0 +1,40 @@
+extends ../_template
+
+block content
+    .wrapper
+        .content
+            section.l-section.l-hero.data-section(data-section='top')
+                +header("Блог", "Статьи, которые я написал")
+                .c-page-title.c-page-title_blog
+                    .c-page-title__bg
+                        svg.c-page-title__pic.c-page-title_blog__pic(viewBox="0 0 2000 110" preserveAspectRatio="none")
+                            polygon(points="0,0 0,110 1000,110")
+                            polygon(points="1000,110 2000,110 2000,0")
+
+            .l-block-main
+                .l-block-main__container
+                    aside.l-page-nav.l-page-nav_aside
+                        .l-page-nav_aside__protractor
+                        ul.l-page-nav__list
+                            -
+                                var navItems = [["Самое важное в SASS", "art1"],
+                                ["Приёмы в вёрсткебез которых не обходится ни один сайт", "art2"],
+                                ["Самый необходимый набор Gulp плагинов", "art3"],
+                                ["Почему я выбрал Jade", "art4"]]
+                            each index, ndx in items
+                                li.l-page-nav__item
+                                    a(href="#art" + `${ndx}`).l-page-nav__link.l-page-nav__link= index.title
+
+                    main.l-block-main_content
+                        each index, ndx in items
+                            article.l-block-article.data-section(data-section='art' + `${ndx}`)
+                                div.l-block-article__title= index.title
+                                div.l-block-article__data= index.data
+                                div.l-block-article__content
+                                    p.l-block-article__par= index.body
+
+            +navigationSite('blog')
+        include partails/_footer
+
+
+

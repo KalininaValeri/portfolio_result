@@ -1,0 +1,84 @@
+- var userName = "Калинина Валерия"
+
+-
+    var siteNav = {
+        "work" : ["Мои работы", "work"],
+        "about" : ["Обо мне", "about"],
+        "blog" : ["Блог", "blog"],
+        "authorization" : ["Авторизация", "#"]
+    }
+
+-
+    var icons = {
+    "vk": ["vk", "https://vk.com/bashinova_v"],
+    "github": ["github", "https://github.com/KalininaValeri"],
+    "in": ["in", "#"]
+    }
+
+- var userName = "Калинина Валерия"
+
+-
+    var siteNav = {
+    "work" : ["Мои работы", "work"],
+    "about" : ["Обо мне", "about"],
+    "blog" : ["Блог", "blog"],
+    "authorization" : ["Авторизация", "#"]
+    }
+-
+    var userContacts = {
+    "email" : "kalinina.valeri@gmail.com",
+    "phone" : "+7 923 183 8521",
+    "skype" : "bashinova.va",
+    "address" : "Новосибирск, р-н Кировский, м.Студенческая"
+    }
+
+
+
+
+mixin socialIcons(className)
+    ul.socials(class=`${className}`)
+        each icon in icons
+            li.social__item
+                a(href=`${icon[1]}` target="_blank").social__link
+                    svg.social__icon
+                        use(xlink:href="/assets/img/sprite.svg#" + `${icon[0]}`)
+
+mixin nav(className, list, active)
+    ul(class="c-nav_" + `${className}`)
+        -
+            var navList = list
+
+        each navItem, ndx in navList
+            li(class="c-nav_" + `${className}` + "__item c-nav_" + `${className}` + "__item_" + `${ndx}`)
+                if ndx === active
+                    a(href="/" + `${navItem[1]}` +"" class="c-nav_" + `${className}` + "__link c-nav_" + `${className}` + "__link_active")= navItem[0]
+                    //a.c-nav_site__link(href="/" + `${navItem[1]}` +".html" class=((ndx === activeEl) ? 'c-nav_site__link_active' : ''))= navItem[0]
+                else
+                    a(href="/" + `${navItem[1]}` +"" class="c-nav_" + `${className}` + "__link")= navItem[0]
+
+
+mixin navigationSite(activeEl)
+    .c-nav_site-list
+        +nav("site", siteNav, activeEl)
+
+mixin user(title, desc, bg)
+    .c-user
+        a(href="/index.js").c-user__pic-container
+            img.c-user__pic(src="/assets/img/content/user.jpg")
+        .c-user__name= title
+        .c-user__desc= desc
+
+
+
+mixin header(userTitle, userDesc)
+    .l-hero__bg
+        video.l-hero__bg-item.l-hero__bg-item_video(src="/assets/img/night.mp4" autoplay loop)
+        img.l-hero__bg-item.l-hero__bg-item_pic(src="/assets/img/bg/bg_portfolio.png")
+    .l-hero__container
+    .c-user__bg
+    +user(userTitle, userDesc)
+
+    +socialIcons()
+
+
+

@@ -1,0 +1,105 @@
+extends ../_template
+
+block content
+    each index, ndx in items
+        if ndx === items.length - 1
+            - var html = index.html
+    .wrapper
+        div= html
+        .content
+            section.l-section.l-hero
+                +header(userName, pageSignature)
+
+            section.l-section.l-about
+                .l-about__col.l-about__col_left
+                    svg(viewBox="0 0 1000 110" preserveAspectRatio="none").l-about__triangle
+                        polygon(points="0,0 0,110 1000,110")
+                    .c-section-title.c-section-title_col.l-about-col__item.l-about-col__item_left
+                        .c-section-title__bg(style="background-image: url(/assets/img/decor/stars2.png)")
+                        span.c-section-title__content Обо мне
+                    .c-about.l-about-col__item.l-about-col__item_right
+                        .c-about__pic-cotainer
+                            img.c-about__pic(src="/assets/img/content/user.jpg").
+                        .c-block-title Кто я
+                        .c-block-text
+                            p Я веб разработчик из Новосибирска. Мне 28 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                            p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+                .l-about__col.l-about__col_right
+                    svg(viewBox="0 0 1000 110" preserveAspectRatio="none").l-about__triangle
+                        polygon(points="0,110 1000,110 1000,0")
+                    .l-skills
+                        .c-block-title Чем я могу быть
+                            br
+                            | вам полезен
+                        .l-skills__text
+                            p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+                        ul.l-skills-group
+
+                            li.l-skills-group__item
+                                .c-skills-group__title Frontend
+
+                                ul.l-skils-list.l-skills-list_three
+                                    -
+                                        var list = [["HTML5", items.html],
+                                        ["CSS3", items.css],
+                                        ["JavaScript & jQuery", items.js]]
+
+                                    each item in list
+                                        li.l-skills-list_item
+                                            .c-skill
+                                                svg.c-skill__circle(style="height: 110px; width: 110px")
+                                                    circle(r="45" cx="50%" cy="50%").c-skills__circle-under
+                                                    circle(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" class="c-skills__circle-above_" + `${item[1]}`).c-skills__circle-above
+                                                .c-skill__title= item[0]
+                            li.l-skills-group__item
+                                .c-skills-group__title Backend
+                                ul.l-skils-list
+
+                                    -
+                                        var list = [["PHP", items.php],
+                                        ["mySQL", items.sql],
+                                        ["Node.js & npm", items.node],
+                                        ["Mongo.db", items.mongo]]
+                                    each item in list
+                                        li.l-skills-list_item
+                                            .c-skill
+                                                svg.c-skill__circle(style="height: 110px; width: 110px")
+                                                    circle(r="45" cx="50%" cy="50%").c-skills__circle-under
+                                                    circle(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" class="c-skills__circle-above_" + `${item[1]}`).c-skills__circle-above
+                                                .c-skill__title= item[0]
+                            li.l-skills-group__item
+                                .c-skills-group__title WorkFlow
+                                ul.l-skils-list.l-skills-list_three
+
+                                    -
+                                        var list = [["Git", items.git],
+                                        ["Gulp", items.gulp],
+                                        ["Bower", items.bower]]
+                                    each item in list
+                                        li.l-skills-list_item
+                                            .c-skill
+                                                svg.c-skill__circle(style="height: 110px; width: 110px")
+                                                    circle(r="45" cx="50%" cy="50%").c-skills__circle-under
+                                                    circle(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" class="c-skills__circle-above_" + `${item[1]}`).c-skills__circle-above
+                                                .c-skill__title= item[0]
+
+            section.l-section.l-map.l-section_bg
+                .c-block-bg.c-block-bg_map#map()
+                .c-contacts
+                    .c-block-title Контакты
+                    ul.c-contacts__container
+                        -
+                            var contacts = [["envelope", userContacts.email], ["skype", userContacts.skype], ["phone", userContacts.phone], ["map", userContacts.address]]
+                        each contact in contacts
+                            li.c-contacts__item
+                                a(href="#").c-contacts__link.c-contacts_col
+                                    svg.c-contacts__icon
+                                        use(xlink:href="/assets/img/sprite.svg#" + `${contact[0]}` + "_n")
+                                .c-contacts__title.c-contacts_col= contact[1]
+
+            +navigationSite('about')
+
+
+        include partails/_footer
+
+

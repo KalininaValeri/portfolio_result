@@ -1,0 +1,85 @@
+extends ../_template
+
+block variables
+    - var title = 'Work'
+
+block content
+    #db(data-db = items)
+    .wrapper
+        .content
+            section.l-section.l-hero.l-hero_work
+                +header("Валерия Калинина", "Личный сайт веб разработчика")
+                .c-page-title
+                    .c-page-title__bg
+                        svg.c-page-title__pic(viewBox="0 0 2000 240" preserveAspectRatio="none")
+                            polygon(points="0,0 0,110 1000,110")
+                            polygon(points="1000,110 2000,110 2000,0")
+                            rect(x="0" y="110" width="2000" height="140")
+
+
+                    .c-section-title(style="background-image: url(/assets/img/decor/stars-works.png)") Мои работы
+            section.l-section.l-slider
+                .l-slider__container
+                    .l-slider__item.l-slider__item_left#slide-active-caption
+                        .l-slider__wrapper
+                            .c-block-title.c-block-title_slider
+                                span.c-block-title__text
+                            .c-block-text_blue
+                            a(href="#" target="_blank").c-block-link_blue
+                                span.c-block-link__icon
+                                    svg.c-block-link__pic
+                                        use(xlink:href="/assets/img/sprite.svg#link")
+                                | Посмотреть сайт
+                    .l-slider__pic-wrapper#slide-active-pic
+                        span
+                        img(src="").l-slider__pic
+                    .l-slider__arrows#slide-items
+                        .l-slider__arrow-dark
+                        .c-block-arrows-wrapper
+                            a(href="#").c-block-arrow#arrow-down
+                                svg.c-block-arrow__pic
+                                    use(xlink:href="/assets/img/sprite.svg#portf_arrow_down")
+                            a(href="#").c-block-arrow#arrow-up
+                                svg.c-block-arrow__pic
+                                    use(xlink:href="/assets/img/sprite.svg#portf_arrow_up")
+            section.l-section.l-section_bg.l-reviews
+                .c-block-bg
+                    img.c-block-bg_pic(src="/assets/img/bg/bg_work.jpg")
+                .c-section-title(style="background-image: url(/assets/img/decor/stars-works.png)") Что обо мне говорят
+                .l-reviews__container
+                    .l-review__item.l-review__item_first
+                        .l-review__pic-cotainer
+                            img(src="/assets/img/content/photo-rev-1.jpg").l-reviews_pic
+                        .l-review__content Этот парень проходил обучение веб-разработке е где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                        .l-review__name Ковальчук Дмитрий
+                        .l-review__position — основатель Loftschool
+                    .l-review__item.l-review__item_second
+                        .l-review__pic-cotainer
+                            img(src="/assets/img/content/photo-rev-2.jpg").l-reviews_pic
+                        .l-review__content Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                        .l-review__name Александр Собакарь
+                        .l-review__position —  наставник
+                .c-form-container.c-form_contact-me
+                    form.c-form#mail(action='contact' method="POST")
+                        .c-block-title.c-block-title_white Связаться со мной
+                        .status
+                        input.c-form__input(placeholder="Ваше имя" type="text" name="name")
+                        input.c-form__input(placeholder="Ваш email" type="email" name="email")
+                        textarea.c-form__input.c-form__input_textarea(placeholder="Ваше сообщение" name="text")
+                        .c-form__button-container
+                            input(type='submit' value="Отправить" name="").c-form__submit.c-form__buttom-item
+                            input(type="button" value="Очистить" name="").c-form__buttom.c-form__buttom-item
+                    .c-form-wrapper
+
+            +navigationSite('work')
+
+        include partails/_footer
+
+
+
+
+
+
+
+
+

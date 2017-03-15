@@ -1,0 +1,21 @@
+extends ../_template
+
+block content
+    include ../common/_greating
+    include ../common/_menu
+
+    .form-container
+        form.form#upload(action='/upload' method="POST" enctype="multipart/form-data")
+            .form__subtitle Мои работы
+            .status
+            label.form__input-line
+                input(name="title" type="text" placeholder="Название проекта").form__input#file-title
+            label.form__input-line
+                input(name="technology" type="text" placeholder="Технологии").form__input#file-tech
+            label.form__input-line
+                input(name="siteUrl" type="text" placeholder="Адрес проекта").form__input#file-site
+            label.form__input-line
+                input(name="photo" type="file" required accept="image/*").form__input#file-select
+            .form__btns.form__input-line
+                input(name="" type="submit" value="Отправить").form__btn-send
+                input(name="" type="reset" value="Очистить").form__btn-reset
