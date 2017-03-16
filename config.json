@@ -18,7 +18,7 @@
     "github": ["github", "https://github.com/KalininaValeri"],
     "in": ["in", "#"]
   },
-  "upload" : "/publick/assets/upload/",
+  "upload" : "./publick/assets/upload/",
   "mail": {
     "subject": "Сообщение с сайта-портфолио",
     "user": "vlalkalinina@gmail.com",
