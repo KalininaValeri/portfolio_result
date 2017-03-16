@@ -5,29 +5,33 @@ block content
     include ../common/_menu
 
     .form-container
-        form.form#skills( method="POST")
-            .form__subtitle Страница обо мне
+        form.form.form_skills#skills( method="POST")
+            .form__subtitle.form_skills__subtitle Страница обо мне
             .status
-            label.form__input-line HTML
-                input(name="html" type="text" placeholder="HTML").form__input
-            label.form__input-line CSS
-                input(name="css" type="text" placeholder="CSS").form__input
-            label.form__input-line JS
-                input(name="js" type="text" placeholder="JS").form__input
-            label.form__input-line PHP
-                input(name="php" type="text" placeholder="PHP").form__input
-            label.form__input-line SQL
-                input(name="sql" type="text" placeholder="SQL").form__input
-            label.form__input-line Node.js
-                input(name="node" type="text" placeholder="Node.js").form__input
-            label.form__input-line Mongo.db
-                input(name="mongo" type="text" placeholder="Mongo.db").form__input
-            label.form__input-line Git
-                input(name="git" type="text" placeholder="Git").form__input
-            label.form__input-line Gulp
-                input(name="gulp" type="text" placeholder="Gulp").form__input
-            label.form__input-line Bower
-                input(name="bower" type="text" placeholder="Bower").form__input
+            .form_skills__container
+                fieldset.form_skills__fieldset
+                    label.form__input-line HTML
+                        input(name="html" type="text" placeholder="HTML").form__input
+                    label.form__input-line CSS
+                        input(name="css" type="text" placeholder="CSS").form__input
+                    label.form__input-line JS
+                        input(name="js" type="text" placeholder="JS").form__input
+                fieldset.form_skills__fieldset
+                    label.form__input-line PHP
+                        input(name="php" type="text" placeholder="PHP").form__input
+                    label.form__input-line SQL
+                        input(name="sql" type="text" placeholder="SQL").form__input
+                    label.form__input-line Node.js
+                        input(name="node" type="text" placeholder="Node.js").form__input
+                    label.form__input-line Mongo.db
+                        input(name="mongo" type="text" placeholder="Mongo.db").form__input
+                fieldset.form_skills__fieldset
+                    label.form__input-line Git
+                        input(name="git" type="text" placeholder="Git").form__input
+                    label.form__input-line Gulp
+                        input(name="gulp" type="text" placeholder="Gulp").form__input
+                    label.form__input-line Bower
+                        input(name="bower" type="text" placeholder="Bower").form__input
 
             .form__btns.form__input-line
                 input(name="" type="submit" value="Отправить").form__btn-send
