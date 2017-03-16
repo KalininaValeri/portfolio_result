@@ -8,7 +8,7 @@ block content
         div= html
         .content
             section.l-section.l-hero
-                +header(userName, pageSignature)
+                +header(userName, "Личный сайт веб разработчика")
 
             section.l-section.l-about
                 .l-about__col.l-about__col_left
@@ -49,7 +49,7 @@ block content
                                             .c-skill
                                                 svg.c-skill__circle(style="height: 110px; width: 110px")
                                                     circle(r="45" cx="50%" cy="50%").c-skills__circle-under
-                                                    circle(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" class="c-skills__circle-above_" + `${item[1]}`).c-skills__circle-above
+                                                    circle(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" class="c-skills__circle-above_" + `${item[1]}`).c-skills__circle-above.c-skills__circle-above_no
                                                 .c-skill__title= item[0]
                             li.l-skills-group__item
                                 .c-skills-group__title Backend
@@ -65,7 +65,7 @@ block content
                                             .c-skill
                                                 svg.c-skill__circle(style="height: 110px; width: 110px")
                                                     circle(r="45" cx="50%" cy="50%").c-skills__circle-under
-                                                    circle(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" class="c-skills__circle-above_" + `${item[1]}`).c-skills__circle-above
+                                                    circle(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" class="c-skills__circle-above_" + `${item[1]}`).c-skills__circle-above.c-skills__circle-above_no
                                                 .c-skill__title= item[0]
                             li.l-skills-group__item
                                 .c-skills-group__title WorkFlow
@@ -80,7 +80,7 @@ block content
                                             .c-skill
                                                 svg.c-skill__circle(style="height: 110px; width: 110px")
                                                     circle(r="45" cx="50%" cy="50%").c-skills__circle-under
-                                                    circle(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" class="c-skills__circle-above_" + `${item[1]}`).c-skills__circle-above
+                                                    circle(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" class="c-skills__circle-above_" + `${item[1]}`).c-skills__circle-above.c-skills__circle-above_no
                                                 .c-skill__title= item[0]
 
             section.l-section.l-map.l-section_bg
@@ -101,5 +101,8 @@ block content
 
 
         include partails/_footer
+        include partails/_hamburger
+
+        script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUt7LASg-YdyG3SE7YtMWBAJksluIXn_s&callback=initMap")
 
 

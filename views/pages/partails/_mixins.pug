@@ -1,21 +1,11 @@
 - var userName = "Калинина Валерия"
 
 -
-    var siteNav = {
-        "work" : ["Мои работы", "work"],
-        "about" : ["Обо мне", "about"],
-        "blog" : ["Блог", "blog"],
-        "authorization" : ["Авторизация", "#"]
-    }
-
--
     var icons = {
     "vk": ["vk", "https://vk.com/bashinova_v"],
     "github": ["github", "https://github.com/KalininaValeri"],
     "in": ["in", "#"]
     }
-
-- var userName = "Калинина Валерия"
 
 -
     var siteNav = {
@@ -71,8 +61,10 @@ mixin user(title, desc, bg)
 
 
 mixin header(userTitle, userDesc)
+    .c-bg.c-bg_stars
+    .c-bg.c-bg_twinkling
+    .c-bg.c-bg_clouds
     .l-hero__bg
-        video.l-hero__bg-item.l-hero__bg-item_video(src="/assets/img/night.mp4" autoplay loop)
         img.l-hero__bg-item.l-hero__bg-item_pic(src="/assets/img/bg/bg_portfolio.png")
     .l-hero__container
     .c-user__bg

@@ -62,7 +62,7 @@ block content
                 .c-form-container.c-form_contact-me
                     form.c-form#mail(action='contact' method="POST")
                         .c-block-title.c-block-title_white Связаться со мной
-                        .status
+                        .c-form-avtor__status
                         input.c-form__input(placeholder="Ваше имя" type="text" name="name")
                         input.c-form__input(placeholder="Ваш email" type="email" name="email")
                         textarea.c-form__input.c-form__input_textarea(placeholder="Ваше сообщение" name="text")
@@ -74,6 +74,7 @@ block content
             +navigationSite('work')
 
         include partails/_footer
+        include partails/_hamburger
 
 
 

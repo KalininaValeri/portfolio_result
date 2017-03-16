@@ -16,10 +16,12 @@ html
         //- favicon block start
         //- favicon block end
 
+        //link(rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css")
+
         link(rel='stylesheet' href='/assets/css/foundation.css')
         link(rel='stylesheet' href='/assets/css/app.css')
         //script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
-        script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvp217cLZuhnx2B-hjAyeUrs0Igs7ip08")
+
         script(src='/assets/js/foundation.js' defer)
         script(src='/assets/js/app.js' defer)
 
@@ -31,11 +33,9 @@ html
 
         block content
 
-        include pages/partails/_hamburger
         .preloader
             .preloder__percentages-container
                 svg(width="50" height="50" viewBox="0 0 50 50").preloader__cercles
                     circle(r="23" cx="25px" cy="25px" transform="rotate(-90 25 25)").preloader__cercle-percentages
                 span.preloder__percentages 20
                 span.preloader__cercle-runner
-
