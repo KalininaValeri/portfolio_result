@@ -14,7 +14,7 @@ router.get('/', function (req, res) {
     Model.find().then(function (items) {
         Object.assign(obj, {items: items});
         console.log(obj);
-        res.render('pages/work', obj);
+        res.render('pages/work.html', obj);
     });
 });
 

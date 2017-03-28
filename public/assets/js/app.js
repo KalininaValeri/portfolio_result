@@ -428,7 +428,7 @@ var Slider = (function () {
     var createImgElement = function (src) {
         var img = document.createElement('img');
         img.classList.add('l-slider__arrow-pic');
-        img.setAttribute('src', '/assets' + src);
+        img.setAttribute('src', './assets' + src);
 
         return img;
     };
@@ -520,7 +520,7 @@ var Slider = (function () {
 
         setTimeout(function () {
             $sliderActivePicWrapper[0].classList.remove('l-slider__pic-wrapper_transform');
-            $slideActivePic[0].setAttribute('src', '/assets' + mainSlide.picture);
+            $slideActivePic[0].setAttribute('src', './assets' + mainSlide.picture);
             // $slideActivePicSpan[0].innerText = currentSlide + 1;
             $slideActiveCaptionLink[0].setAttribute('href', mainSlide.siteUrl);
             animationEnd++;
@@ -718,7 +718,7 @@ var validationContactMe = (function () {
             text: formMail.text.value
         };
         resultContainer.innerHTML = 'Sending...';
-        sendAjaxJson('/work', data, function (data) {
+        sendAjaxJson('/work.html', data, function (data) {
             resultContainer.innerHTML = data;
         });
     }

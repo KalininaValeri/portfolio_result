@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Портфолио</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <!--link(rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css")-->
+    <link rel="stylesheet" href="./assets/css/foundation.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <!--script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")-->
+    <script src="./assets/js/foundation.js" defer></script>
+    <script src="./assets/js/app.js" defer></script>
+    <!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]--></head>
+<body>
+<div class="wrapper l-section_bg">
+    <div class="content">
+        <div class="c-block-bg c-mouse-parallax" id="paralax">
+            <!--video.c-mouse-parallax__item.c-mouse-parallax__item_video(src="./assets/img/night.mp4" autoplay loop)-->
+            <div class="c-bg c-bg_stars"></div>
+            <div class="c-bg c-bg_twinkling"></div>
+            <div class="c-bg c-bg_clouds"></div>
+            <img class="c-mouse-parallax__item c-mouse-parallax__item_pic" src="./assets/img/bg/bg_portfolio.png"></div>
+        <header class="l-header-index"><a class="c-block-link_to-avtor" href="#"><span class="c-block-link__front">Авторизоваться</span><span
+                class="c-block-link__back">На главную</span></a></header>
+        <div class="flip-container">
+            <div class="flipper">
+                <div class="c-bloch-height"></div>
+                <div class="c-block-info" id="front">
+                    <div class="c-user">
+                        <div class="c-user__pic-container"><img class="c-user__pic"
+                                                                src="./assets/img/content/user.jpg"/>
+                        </div>
+                        <div class="c-user__name">Валерия Калинина</div>
+                        <div class="c-user__desc">Личный сайт веб разработчика</div>
+                    </div>
+                    <ul class="socials socials_index">
+                        <li class="social__item"><a class="social__link" href="https://vk.com/bashinova_v"
+                                                    target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="./assets/img/sprite.svg#vk"></use>
+                            </svg>
+                        </a></li>
+                        <li class="social__item"><a class="social__link" href="https://github.com/KalininaValeri"
+                                                    target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="./assets/img/sprite.svg#github"></use>
+                            </svg>
+                        </a></li>
+                        <li class="social__item"><a class="social__link" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="./assets/img/sprite.svg#in"></use>
+                            </svg>
+                        </a></li>
+                    </ul>
+                    <ul class="c-nav_block-info">
+                        <li class="c-nav_block-info__item c-nav_block-info__item_0"><a class="c-nav_block-info__link"
+                                                                                       href="./work.html">Мои работы</a>
+                        </li>
+                        <li class="c-nav_block-info__item c-nav_block-info__item_1"><a class="c-nav_block-info__link"
+                                                                                       href="./about.html">Обо мне</a></li>
+                        <li class="c-nav_block-info__item c-nav_block-info__item_2"><a class="c-nav_block-info__link"
+                                                                                       href="./blog.html">Блог</a></li>
+                    </ul>
+                </div>
+                <div class="c-block-info" id="back">
+                    <form class="c-form-avtor" id="login">
+                        <div class="c-form-avtor__container">
+                            <div class="c-form-avtor__content">
+                                <div class="c-block-title c-block-title_white">Авторизуйтесь</div>
+                                <div class="c-form-avtor__status"></div>
+                                <fieldset class="c-form-avtor__fieldset">
+                                    <div class="c-form-avtor__input-wrapper c-form-avtor__input-wrapper_login"><input
+                                            class="c-form-avtor__input" placeholder="Логин" name="login" type="text">
+                                    </div>
+                                    <div class="c-form-avtor__input-wrapper c-form-avtor__input-wrapper_password"><input
+                                            class="c-form-avtor__input" placeholder="Пароль" name="password"
+                                            type="password"></div>
+                                </fieldset>
+                                <fieldset class="c-form-avtor__fieldset"><input class="c-form-avtor__checkbox"
+                                                                                type="checkbox" name="man"
+                                                                                id="i-man"><label
+                                        class="c-form-avtor__label c-fom-avtor__label_checkbox" for="i-man">Я
+                                    человек</label></fieldset>
+                                <fieldset class="c-form-avtor__fieldset">
+                                    <legend class="c-form-avtor__legend">Вы точно не робот?</legend>
+                                    <input class="c-form-avtor__radio" type="radio" name="robot" id="yes"><label
+                                        class="c-form-avtor__label c-fom-avtor__label_radio" for="yes">Да</label><input
+                                        class="c-form-avtor__radio" type="radio" name="robot" id="hz"><label
+                                        class="c-form-avtor__label c-fom-avtor__label_radio" for="hz">Не уверен</label>
+                                </fieldset>
+                            </div>
+                            <div class="c-form-avtor__footer">
+                                <!--a.c-form-avtor__button#go-home(href="#") Перейти на главную-->
+                                <button class="c-form-avtor__button" type="submit" value="Войти">Войти</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="l-footer l-footer-small">© Калинина Валерия | создано с любовью в LoftSchool | 2017</footer>
+</div>
+<div class="preloader">
+    <div class="preloder__percentages-container">
+        <svg class="preloader__cercles" width="50" height="50" viewBox="0 0 50 50">
+            <circle class="preloader__cercle-percentages" r="23" cx="25px" cy="25px"
+                    transform="rotate(-90 25 25)"></circle>
+        </svg>
+        <span class="preloder__percentages">20</span><span class="preloader__cercle-runner"></span></div>
+</div>
+</body>
+</html>

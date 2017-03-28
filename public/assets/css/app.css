@@ -653,7 +653,7 @@ input:focus, textarea:focus {
   position: absolute;
   top: 50%;
   left: 50%;
-  background: url(/assets/img/decor/strars1.png) no-repeat 50% 50%;
+  background: url(./img/decor/strars1.png) no-repeat 50% 50%;
   background-size: contain;
   opacity: .09;
   height: 16.875rem;
@@ -862,10 +862,10 @@ input:focus, textarea:focus {
     outline: none; }
 
 .c-form-avtor__input-wrapper_login:before {
-  background: url("/assets/img/icons/login.svg") no-repeat 50% 50% #f0efe9; }
+  background: url("./img/icons/login.svg") no-repeat 50% 50% #f0efe9; }
 
 .c-form-avtor__input-wrapper_password:before {
-  background: url("/assets/img/icons/password.svg") no-repeat 50% 50% #f0efe9; }
+  background: url("./img/icons/password.svg") no-repeat 50% 50% #f0efe9; }
 
 .c-form-avtor__label {
   display: inline-block;
@@ -892,7 +892,7 @@ input:focus, textarea:focus {
   background: #004cd1; }
 
 .c-form-avtor__checkbox:checked + .c-fom-avtor__label_checkbox:before {
-  background: url("/assets/img/icons/check.svg") no-repeat 50% 50% #004cd1; }
+  background: url("./img/icons/check.svg") no-repeat 50% 50% #004cd1; }
 
 .c-fom-avtor__label_radio:before {
   background-color: #fff;
@@ -977,7 +977,7 @@ input:focus, textarea:focus {
   bottom: 0;
   left: 0;
   right: 0;
-  background: url("/assets/img/bg/bg_work.jpg") no-repeat;
+  background: url("./img/bg/bg_work.jpg") no-repeat;
   -webkit-filter: blur(0.625rem);
           filter: blur(0.625rem); }
   @media (max-width: 48rem) {
@@ -1043,7 +1043,7 @@ input:focus, textarea:focus {
     right: 0;
     width: 6.25rem;
     height: 7.125rem;
-    background: url("/assets/img/viking.png") no-repeat center;
+    background: url("./img/viking.png") no-repeat center;
     -webkit-transform: translate3D(100%, 0, 0);
         -ms-transform: translate3D(100%, 0, 0);
             transform: translate3D(100%, 0, 0);
@@ -1331,13 +1331,13 @@ input:focus, textarea:focus {
   z-index: -30; }
 
 .c-bg_twinkling {
-  background: transparent url("/assets/img/decor/twinkling.png") repeat top center;
+  background: transparent url("./img/decor/twinkling.png") repeat top center;
   z-index: -20;
   -webkit-animation: move-twink-back 200s linear infinite;
           animation: move-twink-back 200s linear infinite; }
 
 .c-bg_clouds {
-  background: transparent url("/assets/img/decor/clouds.png") repeat top center;
+  background: transparent url("./img/decor/clouds.png") repeat top center;
   z-index: -10;
   -webkit-animation: move-clouds-back 200s linear infinite;
           animation: move-clouds-back 200s linear infinite;
