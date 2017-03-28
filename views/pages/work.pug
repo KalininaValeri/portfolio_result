@@ -15,10 +15,14 @@ block content
                             polygon(points="0,0 0,110 1000,110")
                             polygon(points="1000,110 2000,110 2000,0")
                             rect(x="0" y="110" width="2000" height="140")
+                    .c-section-title
+                        svg.c-section-title__bg.c-section-title__bg_work
+                            use(xlink:href="/assets/img/sprite.svg#works_header")
+                        //(style="background-image: url(/assets/img/decor/stars-works.png)")
+                        | Мои работы
 
-
-                    .c-section-title(style="background-image: url(/assets/img/decor/stars-works.png)") Мои работы
             section.l-section.l-slider
+
                 .l-slider__container
                     .l-slider__item.l-slider__item_left#slide-active-caption
                         .l-slider__wrapper
@@ -45,7 +49,7 @@ block content
             section.l-section.l-section_bg.l-reviews
                 .c-block-bg
                     img.c-block-bg_pic(src="/assets/img/bg/bg_work.jpg")
-                .c-section-title(style="background-image: url(/assets/img/decor/stars-works.png)") Что обо мне говорят
+                .c-section-title Что обо мне говорят
                 .l-reviews__container
                     .l-review__item.l-review__item_first
                         .l-review__pic-cotainer

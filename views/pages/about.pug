@@ -14,9 +14,14 @@ block content
                 .l-about__col.l-about__col_left
                     svg(viewBox="0 0 1000 110" preserveAspectRatio="none").l-about__triangle
                         polygon(points="0,0 0,110 1000,110")
-                    .c-section-title.c-section-title_col.l-about-col__item.l-about-col__item_left
-                        .c-section-title__bg(style="background-image: url(/assets/img/decor/stars2.png)")
-                        span.c-section-title__content Обо мне
+                    //.c-section-title.c-section-title_col.l-about-col__item.l-about-col__item_left
+                    //    .c-section-title__bg(style="background-image: url(/assets/img/decor/stars2.png)")
+                    //    span.c-section-title__content Обо мне
+                    .c-section-title
+                        svg.c-section-title__bg.c-section-title__bg-about
+                            use(xlink:href="/assets/img/sprite.svg#about_header")
+                        //(style="background-image: url(/assets/img/decor/stars-works.png)")
+                        | Обо мне
                     .c-about.l-about-col__item.l-about-col__item_right
                         .c-about__pic-cotainer
                             img.c-about__pic(src="/assets/img/content/user.jpg").
